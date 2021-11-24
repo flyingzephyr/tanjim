@@ -149,6 +149,13 @@
                 text-align: center;
                 word-wrap: normal;
             }
+            nav label i {
+                cursor: pointer;
+                color: #fff;
+                transition: all linear .4s;
+                margin-right: 30px;
+                line-height: 80px;
+            }
         }
         
         @media screen and (max-width:768px) {
@@ -230,6 +237,17 @@
             margin-top: 10px;
             font-size: 16pt;
             font-family: 'ptsans-reg';
+        }
+        
+        @media screen and (max-width:480px) {
+            .banner .banner-text h1,
+            p {
+                padding-left: 30px;
+            }
+            .banner .banner-text h1 {
+                font-size: 25px;
+                word-spacing: 4px;
+            }
         }
         /* banner ends */
         /* About starts*/
@@ -344,6 +362,9 @@
                 justify-content: space-between;
                 align-items: center;
                 flex-direction: column;
+            }
+            .about .content img {
+                margin-left: 0px;
             }
             .about .content .link-icon {
                 display: flex;
