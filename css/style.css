@@ -600,12 +600,14 @@
         
         .footer .box:first-child {
             border-right: 1px solid rgba(255, 255, 255, 0.5);
-            padding-right: 80px;
+            padding-right: 30px;
         }
         
-        .footer .box:first-child h2 {
+        .footer .box h2 {
             text-align: center;
             color: #fff;
+            font-size: 20px;
+            padding-right: 100px;
         }
         
         .footer .box:first-child p {
@@ -615,6 +617,10 @@
         .footer .box:last-child {
             border-left: 1px solid rgba(255, 255, 255, 0.5);
             padding-left: 30px;
+        }
+        
+        .footer .box:last-child h2 {
+            padding-right: 0px;
         }
         
         .footer .box a {
@@ -660,13 +666,27 @@
             }
         }
         
-        @media screen and (max-width:280px) {
+        @media screen and (max-width:290px) {
+            .footer {
+                height: 180px;
+            }
             .footer .box {
                 font-size: 12px;
                 text-align: center;
+                height: 80px;
             }
             .footer .box:first-child h2 {
-                padding-left: 30px;
+                padding-left: 10px;
+            }
+            .footer .box:first-child p {
+                padding: 0px;
+                padding-left: 10px;
+                padding-top: 10px;
+                margin: 0px;
+                text-align: left;
+            }
+            .footer .box:first-child i {
+                display: none;
             }
             .footer .box:last-child {
                 border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -680,7 +700,7 @@
         
         .top {
             position: fixed;
-            bottom: 40px;
+            bottom: 30px;
             right: 20px;
             width: 30px;
             height: 30px;
