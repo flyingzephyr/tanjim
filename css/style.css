@@ -658,11 +658,14 @@
             }
         }
         
-        @media screen and (max-width:340px) {
+        @media screen and (max-width:480px) {
             .footer .box {
                 text-align: left;
                 padding: 0px;
                 margin: 0px;
+            }
+            .footer .box:first-child p {
+                padding: 10px 0px;
             }
         }
         
