@@ -4,7 +4,7 @@ $(document).ready(function() {
     });
 
     var options = {
-        strings: ['An Enthusiast Photograper^1000', 'A Visual Artist^1000', 'A Reseacher In Law^1000'],
+        strings: ['An Enthusiast Photograper^1000', 'A Visual Artist^1000', 'A Legal Reseacher^1000'],
         typeSpeed: 70,
         loop: Infinity,
         smartBackspace: true,
