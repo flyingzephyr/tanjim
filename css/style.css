@@ -215,18 +215,18 @@
             top: 50%;
             right: 15%;
             transform: translateY(-50%);
-            z-index: 2;
+            z-index: 88;
         }
         
         .banner .banner-text h1 {
-            color: rgba(255, 255, 255, 0.89);
+            color: rgba(255, 255, 255, 0.79);
             text-transform: uppercase;
             font-family: 'lato-b';
             font-size: 2.2rem;
         }
         
         .banner .banner-text p {
-            color: whitesmoke;
+            color: rgba(255, 255, 255, 0.79);
             margin-top: 10px;
             font-size: 16pt;
             font-family: 'ptsans-reg';
@@ -535,7 +535,7 @@
         
         .footer .box:first-child h2 {
             text-align: center;
-            color: yellowgreen;
+            color: #fff;
         }
         
         .footer .box:first-child p {
@@ -570,7 +570,7 @@
         
         .footer .box:last-of-type h2 {
             padding-bottom: 10px;
-            color: yellowgreen;
+            color: #fff;
         }
         
         @media screen and (min-width:1000px) {
