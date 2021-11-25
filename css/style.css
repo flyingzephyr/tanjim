@@ -29,6 +29,7 @@
             margin: 0px;
             box-sizing: border-box;
             text-overflow: hidden;
+            overflow-wrap: break-word;
         }
         
         img {
@@ -45,8 +46,8 @@
             list-style-type: none;
         }
         /*=========================
-    Main Css Starts
-===========================*/
+          Main Css Starts
+        ===========================*/
         /* navigation stats */
         
         nav {
@@ -220,7 +221,7 @@
         .banner .banner-text {
             position: absolute;
             top: 50%;
-            right: 15%;
+            left: 15%;
             transform: translateY(-50%);
             z-index: 88;
         }
@@ -238,6 +239,26 @@
             font-size: 16pt;
             font-family: 'ptsans-reg';
         }
+        /* .banner a {
+            color: rgba(255, 255, 255, 0.89);
+            text-transform: uppercase;
+            display: inline-block;
+            border: 1px solid white;
+            width: 110px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            word-spacing: 2px;
+            font-family: 'ptsans-reg';
+        }
+        
+        .banner .banner-text a:hover {
+            color: black;
+            background: orange;
+            border: orange;
+        } */
         
         @media screen and (max-width:480px) {
             .banner .banner-text h1,
@@ -294,21 +315,20 @@
         }
         
         .about .content img {
-            margin-top: 40px;
+            margin-top: 20px;
             margin-left: 20px;
             max-width: 100%;
-            width: 300px;
-            height: 300px;
+            width: 350px;
+            height: 350px;
         }
         
         .about .content .text {
             max-width: 45%;
-            max-height: 300px;
+            max-height: 350px;
             margin-left: 5px;
             font-family: 'ptsans-reg';
             font-size: 1rem;
-            white-space: normal;
-            overflow: hidden;
+            overflow: scroll;
             text-overflow: ellipsis;
         }
         
@@ -367,7 +387,7 @@
         
         @media screen and (max-width:480px) {
             .about .content .text p {
-                padding-right: 40px;
+                padding: 0px;
             }
         }
         
@@ -397,7 +417,7 @@
                 width: 250px;
                 height: 42px;
                 position: absolute;
-                bottom: -86px;
+                bottom: -57px;
                 left: 50%;
                 transform: translateX(-50%);
                 animation: none;
@@ -421,6 +441,7 @@
             }
             .about .content .text {
                 max-width: 100%;
+                width: 80%;
                 height: 200px;
                 margin-right: 0px;
                 padding-left: 0px;
@@ -472,7 +493,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-bottom: 10px;
+            padding-bottom: 20px;
         }
         
         .portfolio .design span {
@@ -491,7 +512,7 @@
         .portfolio .port-content {
             width: 80%;
             height: 100px;
-            margin: 40px auto;
+            margin: 30px auto;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -583,19 +604,18 @@
         .footer {
             max-width: 100%;
             height: 180px;
-            background: #233740;
-            padding-top: 20px;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-content: center;
         }
         
         .footer .box {
-            max-width: 50%;
-            height: 120px;
+            width: 50%;
+            height: auto;
             font-family: 'lato-b';
             color: #fff;
-            margin-top: 20px;
+            padding-top: 20px;
+            background: black;
         }
         
         .footer .box:first-child {
@@ -606,12 +626,11 @@
         .footer .box h2 {
             text-align: center;
             color: #fff;
-            font-size: 20px;
-            padding-right: 100px;
+            font-size: 1.2rem;
         }
         
         .footer .box:first-child p {
-            text-align: left;
+            text-align: center;
         }
         
         .footer .box:last-child {
@@ -620,7 +639,9 @@
         }
         
         .footer .box:last-child h2 {
-            padding-right: 0px;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 1.2rem;
         }
         
         .footer .box a {
@@ -647,39 +668,46 @@
         .footer .box:last-of-type h2 {
             padding-bottom: 10px;
             color: #fff;
+            white-space: nowrap;
         }
         
-        @media screen and (min-width:1000px) {
-            .footer .box:first-child {
-                padding-right: 100px;
-            }
-            .footer .box:last-child {
-                padding-left: 100px;
-            }
-        }
-        
-        @media screen and (max-width:480px) {
+        @media screen and (max-width:768px) {
             .footer .box {
                 text-align: left;
-                padding: 0px;
+                padding-top: 20px;
                 margin: 0px;
+            }
+            .footer .box:first-child h2 {
+                margin-left: 40px;
+                padding-right: 0px;
             }
             .footer .box:first-child p {
                 padding: 10px 0px;
             }
+            .footer .box:last-child address {
+                font-size: 11px;
+            }
+            .footer .box:last-child {
+                border-left: 1px solid rgba(255, 255, 255, 0.5);
+                padding-left: 0px;
+            }
+            .footer .box:last-child h2 {
+                padding-right: 0px;
+            }
         }
         
-        @media screen and (max-width:290px) {
+        @media screen and (max-width:300px) {
             .footer {
-                height: 180px;
+                height: 280px;
             }
             .footer .box {
                 font-size: 12px;
                 text-align: center;
                 height: 80px;
+                margin-top: 0px;
             }
             .footer .box:first-child h2 {
-                padding-left: 10px;
+                white-space: nowrap;
             }
             .footer .box:first-child p {
                 padding: 0px;
@@ -695,7 +723,7 @@
                 border-left: 1px solid rgba(255, 255, 255, 0.5);
                 padding-left: 0px;
                 padding-right: 5px;
-                ;
+                margin: 0px;
             }
         }
         /* footer ends */
