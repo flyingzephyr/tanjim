@@ -346,11 +346,11 @@
         
         .about .content .text .para a {
             display: inline-block;
-            color: tomato;
+            color: skyblue;
         }
         
         .about .content .text .para a:hover {
-            color: red;
+            color: blue;
             text-decoration-line: underline;
         }
         
@@ -451,7 +451,7 @@
             }
             .about .content .text p {
                 white-space: normal;
-                overflow: hidden;
+                overflow-y: hidden;
                 text-overflow: ellipsis;
                 text-align: justify;
                 color: #333;
@@ -615,7 +615,7 @@
             font-family: 'lato-b';
             color: #fff;
             padding-top: 20px;
-            background: black;
+            background: #1c2c33;
         }
         
         .footer .box:first-child {
