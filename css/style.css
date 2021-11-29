@@ -198,7 +198,7 @@
         
         .banner {
             max-width: 100%;
-            height: 480px;
+            height: 90vh;
             background-image: url('../images/banner.jpg');
             background-position: center;
             background-repeat: no-repeat;
@@ -261,6 +261,9 @@
         } */
         
         @media screen and (max-width:480px) {
+            .banner {
+                height: 100vh;
+            }
             .banner .banner-text h1,
             p {
                 padding-left: 30px;
@@ -275,13 +278,13 @@
         
         .about {
             width: 100%;
-            height: 500px;
+            height: 580px;
             background: rgba(220, 220, 220, 0.753);
         }
         
         .about h2 {
             text-align: center;
-            padding-top: 40px;
+            padding-top: 50px;
             font-family: 'lato-black';
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -312,6 +315,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-top: 40px;
         }
         
         .about .content img {
@@ -394,7 +398,7 @@
         @media screen and (max-width:768px) {
             .about {
                 width: 100%;
-                height: 750px;
+                height: 800px;
             }
             .about .content {
                 position: relative;
@@ -462,7 +466,7 @@
         
         .portfolio {
             width: 100%;
-            height: 350px;
+            height: 400px;
             background: gainsboro;
             border-top: 1px solid rgba(128, 128, 128, 0.148);
         }
@@ -699,12 +703,14 @@
         @media screen and (max-width:300px) {
             .footer {
                 height: 280px;
+                background-color: black;
             }
             .footer .box {
                 font-size: 12px;
                 text-align: center;
                 height: 80px;
                 margin-top: 0px;
+                background-color: transparent;
             }
             .footer .box:first-child h2 {
                 white-space: nowrap;
@@ -727,6 +733,30 @@
             }
         }
         /* footer ends */
+        /* design copyright */
+        /* This website is designed by Rezuanul Zannat as a Professional courtesy for Tanjim Rahman. For many simple designs like this contact me at the following number written down under footer section*/
+        
+        .design-copyright {
+            width: 100%;
+            height: 20px;
+            background-color: #1c2c33;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.555);
+        }
+        
+        .design-copyright p {
+            padding-right: 10px;
+            font-size: 10px;
+        }
+        
+        @media screen and (max-width:300px) {
+            .design-copyright {
+                background-color: black;
+            }
+        }
+        /* design copyright */
         /* top button */
         
         .top {
